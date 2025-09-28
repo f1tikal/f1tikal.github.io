@@ -28,8 +28,8 @@ main {
 }
 
 /* Перестановка блоков */
-.section.table { order: 1; }
-.section.links { order: 2; }
+.tables { order: 1; }
+.links { order: 2; }
 
 /* --- Планшет и ПК --- */
 @media (min-width: 768px) {
@@ -49,7 +49,7 @@ main {
     margin: 0 auto;
   }
 
-  .section {
+  .ex{
     max-width: 1000px;
     margin: 15px auto;
   }
