@@ -2,188 +2,220 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Шаблон страницы со ссылками</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <img src="image.png" alt="logo" class="logo">
-        <h1>Название сайта</h1>
-        <nav>
-            <a href="">Ссылка 1</a> 
-            <a href="">Ссылка 2</a>
-            <a href="">Ссылка 3</a>
-        </nav>
+        <div class="golova">
+            <div class="navi">
+                <nav>
+                    <a href="">Ссылка 1</a> 
+                    <a href="">Ссылка 2</a>
+                    <a href="">Ссылка 3</a>
+                </nav>
+            </div>
+            <img src="image.png" alt="logo" style="float: left; margin: 10px;" class="logo">
+            <h1>Название сайта</h1>
+        </div>
     </header>
-
     <main>
+    <div>
         <h1 id="sec1">Примеры различных ссылок</h1>
 
+        <div class="ex">
+            <p><a href="http://kubsu.ru/">Абсолютная ссылка на страницу сайта</a></p>
+
+            <p><a href="https://kubsu.ru">Абсолютная ссылка с HTTPS</a></p>
+        </div>
+        <div class="ex">
+            <p><a href="http://kubsu.ru"><img src="image.jpg" alt="Изображение" style="width: 400px;"></a></p>
+        </div>
+        <div class="ex">
+            <p><a href="/about">Сокращённая ссылка на внутреннюю страницу</a></p>
+
+            <p><a href="/">Сокращённая ссылка на главную страницу</a></p>
+
+            <p><a href="#sec1"> Ссылка на фрагмент текущей страницы </a></p>
+
+            <a href="https://www.kubsu.ru/ru/abiturient/campaign2025"> Ссылка с тремя параметрами в URL </a>
+
+            <p><a href="https://www.kubsu.ru/ru/news/12345?id=67890"> Ссылка с параметром id в URL</a></p>
+
+   
+            <p><a href="contact.html">Относительная ссылка в текущем каталоге</a></p>
+
+            <p> <a href="about/info.html"> Ссылка в about </a></p>
+
+    
+            <p><a href="../par-page.html">Ссылка на страницу уровнем выше</a></p>
+
+   
+            <p><a href="../../grand-page.html">Ссылка на страницу двумя уровнями выше</a></p>
+
+   
+            <p>Контекстная ссылка в <a href="article.html"> тексте абзаца</a>.</p>
+        </div>
+        <div class="ex">
+            <img src="image.jpg" usemap="#image-map" alt="Изображение" style="width: 400px;">
+            <map name="image-map">
+                <area shape="rect" coords="34,44,270,350" href="link.html" alt="Прямоугольная область">
         
-        <div class="container">
+        </map>
 
-            
-            <div class="links-block">
-                <div class="ex">
-                    <p><a href="http://kubsu.ru/">Абсолютная ссылка на страницу сайта</a></p>
-                    <p><a href="https://kubsu.ru">Абсолютная ссылка с HTTPS</a></p>
-                </div>
-                <div class="ex">
-                    <p><a href="http://kubsu.ru"><img src="image.jpg" alt="Изображение" style="width: 400px;"></a></p>
-                </div>
-                <div class="ex">
-                    <p><a href="/about">Сокращённая ссылка на внутреннюю страницу</a></p>
-                    <p><a href="/">Сокращённая ссылка на главную страницу</a></p>
-                    <p><a href="#sec1"> Ссылка на фрагмент текущей страницы </a></p>
-                    <a href="https://www.kubsu.ru/ru/abiturient/campaign2025"> Ссылка с тремя параметрами в URL </a>
-                    <p><a href="https://www.kubsu.ru/ru/news/12345?id=67890"> Ссылка с параметром id в URL</a></p>
-                    <p><a href="contact.html">Относительная ссылка в текущем каталоге</a></p>
-                    <p> <a href="about/info.html"> Ссылка в about </a></p>
-                    <p><a href="../par-page.html">Ссылка на страницу уровнем выше</a></p>
-                    <p><a href="../../grand-page.html">Ссылка на страницу двумя уровнями выше</a></p>
-                    <p>Контекстная ссылка в <a href="article.html"> тексте абзаца</a>.</p>
-                </div>
-                <div class="ex">
-                    <img src="image.jpg" usemap="#image-map" alt="Изображение" style="width: 400px;">
-                    <map name="image-map">
-                        <area shape="rect" coords="34,44,270,350" href="link.html" alt="Прямоугольная область">
-                    </map>
+            <img src="image.jpg" usemap="#image-map" alt="Изображение" style="width: 400px;">
+            <map name="image-map">
+        
+                <area shape="circle" coords="150,150,75" href="link.html" alt="Круглая область">
+        </map>
+        </div>
+        <div class="ex">
+            <p> <a href="https://kubsu.ru/?ysclid=mfkyj5cxhi500318659#:~:text=%D0%9F%D1%80%D0%B8%D0%B5%D0%BC%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%B8%D1%81%D1%81%D0%B8%D1%8F-,%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80,-%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%BA%D0%BE%D0%BC%D0%B8%D1%81%D1%81%D0%B8%D0%B8"> Cсылкa на фрагмент страницы стороннего сайта </a></p>
 
-                    <img src="image.jpg" usemap="#image-map" alt="Изображение" style="width: 400px;">
-                    <map name="image-map">
-                        <area shape="circle" coords="150,150,75" href="link.html" alt="Круглая область">
-                    </map>
-                </div>
-                <div class="ex">
-                    <p><a href="https://kubsu.ru/?ysclid=mfkyj5cxhi500318659#:~:text=%D0%9F%D1%80%D0%B8%D0%B5%D0%BC%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%B8%D1%81%D1%81%D0%B8%D1%8F-,%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80,-%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%BA%D0%BE%D0%BC%D0%B8%D1%81%D1%81%D0%B8%D0%B8"> Cсылкa на фрагмент страницы стороннего сайта </a></p>
-                    <p><a href="">Ссылка с пустым href</a></p>
-                    <p><a>Ссылка без href</a></p>
-                    <p><a href="1.html" rel="nofollow">nofollow</a></p>
-                    <p> <noindex> <a href="1.html"> Ссылка не для индексации</a> </noindex></p>
-                    <ol>
-                        <li><a href="link1.html" title="Первая ссылка">Ссылка 1</a></li>
-                        <li><a href="link2.html" title="Вторая ссылка">Ссылка 2</a></li>
-                        <li><a href="link3.html" title="Третья ссылка">Ссылка 3</a></li>
-                    </ol>
-                    <p><a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на FTP-файл с авторизацией</a></p>
-                </div>
-            </div>
+    
+            <p><a href="">Ссылка с пустым href</a></p>
 
-            
-            <div class="table-block">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">Информация о студентах</th>
-                            <th>Факультет</th>
-                            <th>Год обучения</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td rowspan="2">Иванов</td>
-                            <td>Иван</td>
-                            <td>Психология</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Сергей</td>
-                            <td>Социология</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">Петрова</td>
-                            <td>Мария</td>
-                            <td>Экономика</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>Анна</td>
-                            <td>История</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">Сидоров</td>
-                            <td>Алексей</td>
-                            <td>Филология</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>Ольга</td>
-                            <td>Юриспруденция</td>
-                            <td>2</td>
-                        </tr>
-                    </tbody>
+   
+            <p><a>Ссылка без href</a></p>
+
+    
+            <p><a href="1.html" rel="nofollow">nofollow</a></p>
+            <p> <noindex> <a href="1.html"> Ссылка не для индексации</a> </noindex></p>
+
+    
+            <ol>
+                <li><a href="link1.html" title="Первая ссылка">Ссылка 1</a></li>
+                <li><a href="link2.html" title="Вторая ссылка">Ссылка 2</a></li>
+                <li><a href="link3.html" title="Третья ссылка">Ссылка 3</a></li>
+            </ol>
+
+    
+            <p><a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на FTP-файл с авторизацией</a></p>
+        </div>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Информация о студентах</th>
+                        <th>Факультет</th>
+                        <th>Год обучения</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Иванов</td>
+                        <td>Иван</td>
+                        <td>Психология</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Сергей</td>
+                        <td>Социология</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Петрова</td>
+                        <td>Мария</td>
+                        <td>Экономика</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Анна</td>
+                        <td>История</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Сидоров</td>
+                        <td>Алексей</td>
+                        <td>Филология</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Ольга</td>
+                        <td>Юриспруденция</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
                 </table>
-            </div>
         </div>
 
-        
         <div class="form-container">
-            <h2 class="form-title">Форма регистрации</h2>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="fio">ФИО <span class="required">*</span></label>
-                    <input type="text" id="fio" name="fio" required placeholder="Введите ваше полное имя">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Телефон <span class="required">*</span></label>
-                    <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" required placeholder="example@mail.com">
-                </div>
-                <div class="form-group">
-                    <label for="birthdate">Дата рождения <span class="required">*</span></label>
-                    <input type="date" id="birthdate" name="birthdate" required>
-                </div>
-                <div class="form-group">
-                    <label>Пол <span class="required">*</span></label>
-                    <div class="radio-group">
-                        <label>
-                            <input type="radio" name="gender" value="male" required> Мужской
-                        </label>
-                        <label>
-                            <input type="radio" name="gender" value="female"> Женский
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="languages">Любимый язык программирования</label>
-                    <select id="languages" name="languages" multiple size="5">
-                        <option value="pascal">Pascal</option>
-                        <option value="c">C</option>
-                        <option value="cpp">C++</option>
-                        <option value="javascript">JavaScript</option>
-                        <option value="php">PHP</option>
-                        <option value="python">Python</option>
-                        <option value="java">Java</option>
-                        <option value="haskel">Haskel</option>
-                        <option value="clojure">Clojure</option>
-                        <option value="prolog">Prolog</option>
-                        <option value="scala">Scala</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="bio">Биография</label>
-                    <textarea id="bio" name="bio" placeholder="Расскажите о себе..."></textarea>
-                </div>
-                <div class="form-group">
-                    <div class="checkbox-group">
-                        <label>
-                            <input type="checkbox" name="agreement" required> С контрактом ознакомлен(а) <span class="required">*</span>
-                        </label>
-                    </div>
-                </div>
-                <button type="submit">Сохранить</button>
-            </form>
-        </div>
-    </main>
+        <h2 class="form-title">Форма регистрации</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fio">ФИО <span class="required">*</span></label>
+                <input type="text" id="fio" name="fio" required placeholder="Введите ваше полное имя">
+            </div>
 
+            <div class="form-group">
+                <label for="phone">Телефон <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="example@mail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">Дата рождения <span class="required">*</span></label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <div class="form-group">
+                <label>Пол <span class="required">*</span></label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male" required> Мужской
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Женский
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="languages">Любимый язык программирования</label>
+                <select id="languages" name="languages" multiple size="5">
+                    <option value="pascal">Pascal</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="haskel">Haskel</option>
+                    <option value="clojure">Clojure</option>
+                    <option value="prolog">Prolog</option>
+                    <option value="scala">Scala</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Биография</label>
+                <textarea id="bio" name="bio" placeholder="Расскажите о себе..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="agreement" required> С контрактом ознакомлен(а) <span class="required">*</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit">Сохранить</button>
+        </form>
+        </div>
+
+    </div>
+    </main>
+    
     <footer>
-        <p>(c) Винокуров Максим</p>
+        <p> (c) Винокуров Максим</p>
     </footer>    
 
 </body>
