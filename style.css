@@ -1,50 +1,70 @@
-h1{
-    color: blueviolet;
-}
-nav{
-    background-color: rgb(252, 252, 252);
-}
-header{
-    background-color: #a7a7a7;
-    width: 100%;
-    padding: 10px;
-    max-height: 960px;
-    height: 150px;
-}
-.navi{
-    float: right;
-    margin: 10px;
-    
-}
-.logo{
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid rgb(111, 0, 255);
-    
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-footer{
-    width: 100%;
-    background-color:#a7a7a7;
-    text-align: left;
-    padding: 10px 0;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #333;
+header, nav, footer, main, .ex {
+  width: 100%;
 }
-.ex{
-    border-left: 2px solid rgb(111, 0, 255);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 0 auto;
-    margin-top: 20px;
-    
+
+header {
+  background-color: #a7a7a7;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-table {
-  border-collapse: collapse; 
+
+.logo {
+  border-radius: 50%;
+  border: 2px solid rgb(111, 0, 255);
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  background: #fff;
+  width: 100%;
+}
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #ccc;
   width: 100%;
   text-align: center;
-  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.links-block {
+  order: 2; 
+}
+
+.table-block {
+  order: 1; 
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
 }
 
 th, td {
@@ -58,9 +78,59 @@ thead {
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #f9f9f9; /* нечётные строки */
+  background-color: #f9f9f9;
 }
 
 tbody tr:nth-child(even) {
-  background-color: #e0e0e0; /* чётные строки */
+  background-color: #e0e0e0;
+}
+
+footer {
+  background-color: #a7a7a7;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+
+@media (min-width: 600px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    margin: 10px;
+  }
+
+  header h1 {
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  nav {
+    flex-direction: row; 
+    justify-content: flex-end;
+    margin-left: auto;
+    background: transparent;
+  }
+
+  nav a {
+    border: none;
+    width: auto;
+  }
+
+
+  .links-block {
+    order: 1;
+  }
+  .table-block {
+    order: 2;
+  }
+
+  .container {
+    flex-direction: column;
+  }
 }
