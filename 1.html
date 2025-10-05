@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Шаблон страницы со ссылками</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
     <header>
         <div class="golova">
-            <div class="navi">
-                <nav>
+            <div>
+                <nav class="navbar navbar-expand-md">
                      <ul>
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">О нас</a></li>
@@ -21,22 +25,22 @@
                 </nav>
             </div>
             <img src="image.png" alt="logo" style="float: left; margin: 10px;" class="logo">
-            <h1>Название сайта</h1>
+            <h1 >Название сайта</h1>
         </div>
     </header>
     <main>
-    <div>
-        <h1 id="sec1">Примеры различных ссылок</h1>
+    <div class="container">
+        <h1 id="sec1" class="h4 mb-4">Примеры различных ссылок</h1>
 
-        <div class="ex">
+        <div class="ex col-12 col-md-6 col-lg-4">
             <p><a href="http://kubsu.ru/">Абсолютная ссылка на страницу сайта</a></p>
 
             <p><a href="https://kubsu.ru">Абсолютная ссылка с HTTPS</a></p>
         </div>
-        <div class="ex">
+        <div class="ex col-12 col-md-6 col-lg-4">
             <p><a href="http://kubsu.ru"><img src="image.jpg" alt="Изображение" style="width: 400px;"></a></p>
         </div>
-        <div class="ex">
+        <div class="ex col-12 col-md-6 col-lg-4">
             <p><a href="/about">Сокращённая ссылка на внутреннюю страницу</a></p>
 
             <p><a href="/">Сокращённая ссылка на главную страницу</a></p>
@@ -61,7 +65,7 @@
    
             <p>Контекстная ссылка в <a href="article.html"> тексте абзаца</a>.</p>
         </div>
-        <div class="ex">
+        <div class="ex col-12 col-md-6 col-lg-4">
             <img src="image.jpg" usemap="#image-map" alt="Изображение" style="width: 400px;">
             <map name="image-map">
                 <area shape="rect" coords="34,44,270,350" href="link.html" alt="Прямоугольная область">
@@ -74,7 +78,7 @@
                 <area shape="circle" coords="150,150,75" href="link.html" alt="Круглая область">
         </map>
         </div>
-        <div class="ex">
+        <div class="ex col-12 col-md-6 col-lg-4">
             <p> <a href="https://kubsu.ru/?ysclid=mfkyj5cxhi500318659#:~:text=%D0%9F%D1%80%D0%B8%D0%B5%D0%BC%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%B8%D1%81%D1%81%D0%B8%D1%8F-,%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80,-%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%BA%D0%BE%D0%BC%D0%B8%D1%81%D1%81%D0%B8%D0%B8"> Cсылкa на фрагмент страницы стороннего сайта </a></p>
 
     
@@ -147,7 +151,7 @@
                 </table>
         </div>
 
-        <div class="form-container">
+        <div class="form-container col-12 col-md-6 col-lg-4">
         <h2 class="form-title">Форма регистрации</h2>
         <form action="#" method="post">
             <div class="form-group">

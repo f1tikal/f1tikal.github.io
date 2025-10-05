@@ -61,6 +61,8 @@ h1{
 }
 nav{
     background-color: rgb(252, 252, 252);
+    float: right;
+    margin: 10px;
 }
 header{
     background-color: #a7a7a7;
@@ -69,11 +71,7 @@ header{
     max-height: 960px;
     height: 150px;
 }
-.navi{
-    float: right;
-    margin: 10px;
-    
-}
+
 .logo{
     border-radius: 50%;
     object-fit: cover;
