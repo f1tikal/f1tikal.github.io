@@ -120,3 +120,22 @@ tbody tr:nth-child(odd) {
 tbody tr:nth-child(even) {
   background-color: #e0e0e0; /* чётные строки */
 }
+button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background: rgb(111, 0, 255);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: rgb(111, 0, 255);
+    }
+    #result {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
